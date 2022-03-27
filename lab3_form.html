@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Lanjutan</title>
+</head>
+
+<body>
+  <header>
+    <h1>Membuat Form</h1>
+    <form style=background-color:#0bc084;="proses.php" method="post">
+      <fieldset>
+        <legend style=background-color:#197a43;;>Data Pelanggan</legend>
+        <p>
+          <label for="nama">Nama</label>
+          <td> : </td>
+          <input type="text" id="nama" name="nama">
+        </p>
+        <p>
+          <label for="alamat">Alamat</label>
+          <td> : </td>
+          <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+        </p>
+        <p>
+          <label>Jenis Kelamin</label>
+          <td> : </td>
+          <input id="jk_l" type="radio" name="kelamin" value="L" /><label for="jk_l">Laki-laki</label>
+          <input id="jk_p" type="radio" name="kelamin" value="P" /><label for="jk_p">Perempuan</label>
+        </p>
+        <P>
+          <label>Agama</label>
+          <td> : </td>
+        <form name="form1" action="proses.php" method="get">
+          <select name="Agama">
+            <option value="Islam" selected="selected">Islam</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddhan">Buddhan</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Khonghucu"> Khonghucu</option>
+          </select>
+          </p>
+          <P>
+            <label>Kategori</label>
+            <td> : </td>
+          <form name="form2" action="proses.php" method="get">
+            <select name="Kategori" size="6" multiple="multiple">
+              <option value="Reseller" selected="selected">Reseller</option>
+              <option value="Sub Agen">Sub Agen </option>
+              <option value="Agen">Agen </option>
+              <option value="Sub Du">Sub Du</option>
+              <option value="Du">Du</option>
+              <option value="Sub Stokis">Sub Stokis</option>
+              <option value="Stokis">Stokis</option>
+            </select>
+          </form>
+          </P>
+          <p><input type="submit" value="Login"></p>
+      </fieldset>
+    </form>
+    <style>
+      form p>label {
+        display: inline-block;
+        width: 100px;
+      }
+
+      form input[type="text"],
+      form textarea {
+        border: 1px solid #197a43;
+      }
+
+      form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+      }
+    </style>
+  </header>
+</body>
+
+</html>
